@@ -2,130 +2,57 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial;
+    font-family:Arial,sans-serif;
 }
-
 
 body{
-    background:#f4f7fb;
-    color:#333;
+    background:#f4f4f4;
 }
 
-
-header{
-    background:#222;
-    color:white;
-    padding:20px;
+.contact{
+    width:100%;
     text-align:center;
+    padding:80px 20px;
 }
 
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-}
-
-
-section{
-    padding:40px;
-}
-
-
-h2{
-    text-align:center;
-    margin-bottom:30px;
+.contact h1{
     color:#2563eb;
-}
-
-
-.project-container{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-
-.card{
-    background:white;
-    width:300px;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px gray;
-}
-
-
-.card h3{
-    color:#111;
-    margin-bottom:15px;
-}
-
-
-.card p{
     margin-bottom:20px;
 }
 
+.contact p{
+    margin-bottom:30px;
+    color:#555;
+}
 
-.card a{
-    display:inline-block;
+.contact-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.contact-box a{
+    text-decoration:none;
     background:#2563eb;
     color:white;
-    padding:8px 15px;
-    margin:5px;
-    border-radius:5px;
-    text-decoration:none;
-}
-
-
-.education-box{
-    background:white;
-    width:70%;
-    margin:20px auto;
-    padding:20px;
+    padding:15px 30px;
     border-radius:10px;
-    box-shadow:0 4px 10px gray;
+    transition:.3s;
 }
 
-
-.resume-btn{
-    display:block;
-    width:200px;
-    text-align:center;
-    margin:auto;
-    background:#16a34a;
-    color:white;
-    padding:15px;
-    border-radius:8px;
-    text-decoration:none;
+.contact-box a:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
 }
-
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-
-
-/* Mobile Responsive */
 
 @media(max-width:768px){
+    .contact-box{
+        flex-direction:column;
+        align-items:center;
+    }
 
-.project-container{
-    flex-direction:column;
-    align-items:center;
-}
-
-
-.card{
-    width:90%;
-}
-
-
-.education-box{
-    width:90%;
-}
-
+    .contact-box a{
+        width:250px;
+    }
 }
